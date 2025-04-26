@@ -1,0 +1,210 @@
+
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <header>
+        <div class="head_btns">
+            <button  class="search">search</button>
+            <button class="categoria">all categories</button>
+            <button class="s_img"><img src="img/Search.png" alt=""></button>
+        </div>
+        
+        <button class="dostaw">dost</button>
+        
+
+        <button class="buccet" id="cartBtn">
+            <img src="img/Basket.png" alt="Basket">
+        </button>
+        
+        <!-- Модальне вікно для корзини -->
+        <div id="cartModal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-btn" id="closeCartBtn">&times;</span>
+                <h2>Ваша корзина</h2>
+                <div class="cart-items">
+                    <!-- Товари в корзині -->
+                    <div class="cart-item">
+                        <img src="img/image.png" alt="Product">
+                        <div class="cart-item-details">
+                            <p>Товар 1</p>
+                            <p>Ціна: $19.99</p>
+                        </div>
+                        <button class="remove-btn">Видалити</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/image.png" alt="Product">
+                        <div class="cart-item-details">
+                            <p>Товар 2</p>
+                            <p>Ціна: $29.99</p>
+                        </div>
+                        <button class="remove-btn">Видалити</button>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <p><strong>Загальна сума: $49.98</strong></p>
+                    <button class="checkout-btn">Оформити замовлення</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="product-row">
+        <div class="product">
+            <img class="prom_img" src="img/image.png" alt="">
+            <button class="pro">news day</button>
+        </div>
+        <div class="product">
+            <img class="prom_img" src="img/image.png" alt="">
+            <button class="pro">breaking now</button>
+        </div>
+    </div>
+    <div clas="bottom-line"></div>
+    <div class="gallery-row">
+        <!-- Ліва колонка -->
+        <div class="side-gallery pl">
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$19.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$24.50</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$14.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$9.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$29.00</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$17.75</div>
+            </div>
+        </div>
+    
+        <!-- Вертикальна лінія -->
+        <div class="vertical-line"></div>
+    
+        <!-- Права колонка (повторюється знову) -->
+        <div class="side-gallery pr">
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$22.10</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$15.40</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$31.25</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$12.90</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$28.35</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$16.00</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Нижній блок з товарами -->
+    <div class="gallery-row">
+        <!-- Ліва колонка (повтор) -->
+        <div class="side-gallery">
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$19.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$24.50</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$14.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$9.99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$29.00</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$17.75</div>
+            </div>
+        </div>
+    
+        <!-- Вертикальна лінія -->
+        <div class="vertical-line"></div>
+    
+        <!-- Права колонка (повтор) -->
+        <div class="side-gallery">
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$22.10</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$15.40</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$31.25</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$12.90</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$28.35</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/image.png" alt="">
+                <div class="price">$16.00</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <h3>Контактні дані</h3>
+            <p><strong>Телефон:</strong> +380 123 456 789</p>
+            <p><strong>Електронна пошта:</strong> example@mail.com</p>
+            <p><strong>Адреса:</strong> вулиця Прикладна, 123, Київ, Україна</p>
+        </div>
+        <div class="social-links">
+            <h3>Наші соцмережі</h3>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    <!-- Кнопка для відкриття корзини (існуюча) -->
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

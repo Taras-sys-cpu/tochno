@@ -1,0 +1,406 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #C2FFC7;
+}
+
+
+header{
+    background-color: #9EDF9C;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_btns{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    padding: 0 40px;
+    height: 70px;
+    border-radius: 50px 0 0 50px;
+    background-color: #526E48;
+    border: 3px solid #344E2B;
+    color: #A7A7A7
+}
+
+.categoria{
+    font-size:larger ;
+    padding: 0 40px;
+    border-radius: 0 0 0 0;
+    height:70px;
+    background-color: #526E48;
+    border: 3px solid #344E2B;
+    color: #A7A7A7
+    
+   
+    
+}
+
+.s_img{
+    
+    padding: 0 40px;
+    height: 70px;
+    border-radius: 0 50px 50px 0;
+    background-color: #526E48;
+    border: 3px solid #344E2B;
+    
+  
+    
+   
+}
+
+.s_img img{
+    width: 50px;
+}
+
+
+
+
+
+.dostaw{
+    padding: 0 30px;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #526E48;
+    border: 3px solid #344E2B;
+    color: #A7A7A7
+
+    
+
+}
+
+.buccet{
+    padding: 0 30px;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #526E48;
+    border: 3px solid #344E2B;
+    color: #A7A7A7
+}
+.buccet img{
+    width: 50px;
+}
+.pro{
+    border: none;
+    background-color: #526E48;
+   
+    color: #A7A7A7;
+    margin-top: -20px;
+    padding: 10px 20px;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0 0 25px 25px;
+}
+
+.prom_img img{
+   
+
+    margin-top: 0px;
+    margin-left:60px;
+    height: 250px;
+    width: 100%;
+    border: none;
+    display: block;
+
+
+    
+}
+.prom_img{
+    width: 400px;
+    height: 200px;
+    border: none;
+    display: flex;
+}
+.product {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px ;
+}
+
+
+
+.product-row {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+ 
+    
+    gap:200px;
+}
+
+.bottom-line {
+    height: 5px;
+    width:  860px;
+    
+    color:#344E2B;
+    margin-top: 40px;
+    display: none;
+
+}
+  
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding-top: 40px;
+   
+    gap: 350px; /* Відстань між колонками тепер 350px */
+    position: relative; /* Для вертикальної лінії */
+}
+
+.side-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px; /* Відстань між зображеннями */
+    width: 470px;
+}
+
+.pl{
+    padding-left: 200px;
+}
+
+.pr{
+    padding-right: 200px;
+}
+
+.gallery-item{
+    width: 45%;
+}
+
+.side-gallery:first-child {
+    padding-right: 0; /* Забираємо відступи з правої колонки */
+}
+
+.side-gallery:last-child {
+    padding-left: 0; /* Забираємо відступи з лівої колонки */
+}
+
+/* Лінія між колонками */
+.gallery-row::after {
+    content: "";
+    position: absolute;
+    top: 120px; /* Починається від горизонтальної лінії */
+    left: 50%; /* Вертикально по центру між колонками */
+    height: calc(100% - 120px); /* Лінія йде донизу, але не до самого верху */
+    width: 3px;
+    background-color: #333; /* Вертикальна лінія між колонками */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.price {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #444;
+    text-align: center;
+}
+
+footer {
+    background-color: #9EDF9C; /* Світліший зелений фон */
+    color: #344E2B; /* Темний текст для контрасту */
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    border-top-left-radius: 20px; /* Заокруглення лівого верхнього кута */
+    border-top-right-radius: 20px; /* Заокруглення правого верхнього кута */
+    position: relative; /* Для розташування горизонтальних ліній */
+}
+
+footer h3 {
+    color: #344E2B; /* Темний колір для заголовків */
+}
+
+.contact-info, .social-links {
+    width: 45%; /* Для більшого простору */
+    margin: 10px;
+}
+
+footer a {
+    color: #344E2B;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    color: #526E48; /* Підсвічування при наведенні */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info, .social-links {
+        width: 100%;
+    }
+}
+
+/* Вертикальна лінія між колонками */
+.gallery-row::after {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    height: calc(100% - 120px);
+    width: 8px;
+    background-color: #9EDF9C;
+    border-radius: 10px;
+}
+
+/* Лінія між товарами (горизонтальна) */
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding-top: 40px;
+    border-top: 3px solid #333;
+    gap: 350px;
+    position: relative;
+}
+
+.gallery-row::before {
+    content: "";
+    position: absolute;
+    top: 0px; /* Відступ від початку вертикальної лінії */
+    left: 0;
+    right: 0;
+    height: 8px; /* Ширина горизонтальної лінії */
+    background-color: #9EDF9C;
+    border-radius: 10px;
+}
+
+/* Додати горизонтальні лінії між елементами галереї */
+.gallery-item {
+    margin-bottom: 20px; /* Відступ між товарами */
+    position: relative;
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Позиція лінії під елементом */
+    left: 0;
+    width: 100%;
+    height: 8px; /* Ширина горизонтальної лінії */
+    background-color: #9EDF9C;
+    border-radius: 10px;
+}
+
+
+/* Модальне вікно */
+.cart-modal {
+    display: none; /* Спочатку сховане */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Контент модального вікна */
+.cart-modal-content {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #344E2B;
+}
+
+/* Закрити кнопку */
+.close-btn {
+    font-size: 30px;
+    color: #344E2B;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Стиль для товарів у корзині */
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #9EDF9C;
+}
+
+.cart-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.remove-btn {
+    background-color: #9EDF9C;
+    color: #344E2B;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #526E48;
+}
+
+/* Загальна сума */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 2px solid #9EDF9C;
+}
+
+.checkout-btn {
+    background-color: #9EDF9C;
+    color: #344E2B;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #526E48;
+}
